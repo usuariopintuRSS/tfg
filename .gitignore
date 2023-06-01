@@ -1,0 +1,10 @@
+*.txt
+*.exe
+*.meta
+*.unity
+*.png
+*.mp3
+*.wav
+*.dll
+Logs
+Library

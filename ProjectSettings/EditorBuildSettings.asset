@@ -9,6 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/JueguesitoInfinito.unity
+    path: Assets/Scenes/JueguesitoContrarreloj.unity
     guid: fc77cda3156a84e48bb95e3b1cf73d21
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoInfinito.unity
+    guid: 1570ce0d9b4992549968fd665d90ff41
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoDia1.unity
+    guid: be0c6ae859a46a84894b5eb0cab5098e
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoDia2.unity
+    guid: 56d7fa92da012624291ac8624c7973d1
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoDia3.unity
+    guid: 63e13262b752f0e4d8f57ae276ac436a
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoDia4.unity
+    guid: eb011dad4a2888f499105c4d38fefcd9
+  - enabled: 1
+    path: Assets/Scenes/JueguesitoDia5.unity
+    guid: aefbe3f87b6519241bebfa6e7ac557bd
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 010c672ae3989504b8751596d567f9c7, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 5e0b5d10bd747854ba490dc0525ee2d8, type: 2}

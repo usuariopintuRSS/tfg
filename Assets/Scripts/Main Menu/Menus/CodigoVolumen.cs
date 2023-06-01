@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class CodigoVolumen : MonoBehaviour
 {
-
     public Slider slider;
     public float sliderValue;
-    
+
     void Start()
     {
         slider.value = PlayerPrefs.GetFloat("volumenAudio", 0.5f);

@@ -6,7 +6,7 @@ public class ArrastraFrenaYClaxon : MonoBehaviour
 {
     Vector3 mousePositionOffset;
 
-    bool gravedad=false;
+    bool gravedad = false;
 
     Rigidbody2D rb;
 
@@ -17,17 +17,17 @@ public class ArrastraFrenaYClaxon : MonoBehaviour
 
     private void OnMouseDown()
     {
-        mousePositionOffset=gameObject.transform.position-GetMouseWorldPosition();
+        mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
     }
 
     private void OnMouseDrag()
     {
-        transform.position=GetMouseWorldPosition()+mousePositionOffset;
+        transform.position = GetMouseWorldPosition() + mousePositionOffset;
     }
 
     private void Update()
     {
-        if(transform.position.x<=-0.75)
+        if (transform.position.x <= -0.75)
         {
             this.gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
             this.gameObject.transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
@@ -37,26 +37,27 @@ public class ArrastraFrenaYClaxon : MonoBehaviour
             this.gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
             this.gameObject.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
         }
-        if(transform.position.x<=-0.75&&transform.position.y<=-1.5)
+        if (transform.position.x <= -0.75 && transform.position.y <= -1.5)
         {
             Destroy(rb);
-            gravedad=false;
+            gravedad = false;
         }
-        if(gravedad==true)
+        if (gravedad == true)
         {
-            rb.velocity=new Vector2(0f, -Time.deltaTime*5000);
+            rb.velocity = new Vector2(0f, -Time.deltaTime * 5000);
         }
     }
 
-    private void OnMouseUp() 
+    private void OnMouseUp()
     {
-        if(transform.position.x<=-0.75&&transform.position.y>-1.5) Flota();
+        if (transform.position.x <= -0.75 && transform.position.y > -1.5)
+            Flota();
     }
 
     private void Flota()
     {
-        rb=this.gameObject.AddComponent<Rigidbody2D>();
-        rb.isKinematic=true;
-        gravedad=true;
+        rb = this.gameObject.AddComponent<Rigidbody2D>();
+        rb.isKinematic = true;
+        gravedad = true;
     }
 }

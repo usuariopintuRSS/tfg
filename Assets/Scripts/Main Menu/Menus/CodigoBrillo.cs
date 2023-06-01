@@ -13,18 +13,23 @@ public class CodigoBrillo : MonoBehaviour
     {
         slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
 
-        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
-    }
-
-    void Update()
-    {
-
+        panelBrillo.color = new Color(
+            panelBrillo.color.r,
+            panelBrillo.color.g,
+            panelBrillo.color.b,
+            slider.value
+        );
     }
 
     public void ChangeSlider(float valor)
     {
         sliderValue = valor;
         PlayerPrefs.SetFloat("brillo", sliderValue);
-        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
+        panelBrillo.color = new Color(
+            panelBrillo.color.r,
+            panelBrillo.color.g,
+            panelBrillo.color.b,
+            slider.value
+        );
     }
 }

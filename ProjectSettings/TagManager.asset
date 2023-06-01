@@ -7,6 +7,8 @@ TagManager:
   - Personaje
   - Documento
   - Botonsito
+  - Dialogo
+  - Bocadillo
   layers:
   - Default
   - TransparentFX
